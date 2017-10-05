@@ -25,6 +25,11 @@
            emacs-version spacemacs-emacs-min-version)
   (load-file (concat (file-name-directory load-file-name)
                      "core/core-load-paths.el"))
+
+  (setq package-archives '(("gnu" . "http://elpa.emacs-china.org/gnu/")
+                           ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+  
+  
   (require 'core-spacemacs)
   (spacemacs/init)
   (configuration-layer/sync)
